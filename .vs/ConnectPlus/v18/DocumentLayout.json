@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ROHIT\\CONNECTPLUS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|ConnectPlus\\ConnectPlus.csproj|c:\\users\\rohit\\connectplus\\connectplus\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|ConnectPlus\\ConnectPlus.csproj|solutionrelative:connectplus\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|ConnectPlus\\ConnectPlus.csproj|c:\\users\\rohit\\connectplus\\connectplus\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|ConnectPlus\\ConnectPlus.csproj|solutionrelative:connectplus\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|ConnectPlus\\ConnectPlus.csproj|c:\\users\\rohit\\connectplus\\connectplus\\services\\videoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|ConnectPlus\\ConnectPlus.csproj|solutionrelative:connectplus\\services\\videoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|ConnectPlus\\ConnectPlus.csproj|c:\\users\\rohit\\connectplus\\connectplus\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|ConnectPlus\\ConnectPlus.csproj|solutionrelative:connectplus\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|ConnectPlus\\ConnectPlus.csproj|c:\\users\\rohit\\connectplus\\connectplus\\forms\\activationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|ConnectPlus\\ConnectPlus.csproj|solutionrelative:connectplus\\forms\\activationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|ConnectPlus\\ConnectPlus.csproj|c:\\users\\rohit\\connectplus\\connectplus\\connectplus.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-4A5B-8C9D-0E1F2A3B4C5D}|ConnectPlus\\ConnectPlus.csproj|solutionrelative:connectplus\\connectplus.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppConfig.cs",
+              "DocumentMoniker": "C:\\Users\\ROHIT\\CONNECTPLUS\\ConnectPlus\\AppConfig.cs",
+              "RelativeDocumentMoniker": "ConnectPlus\\AppConfig.cs",
+              "ToolTip": "C:\\Users\\ROHIT\\CONNECTPLUS\\ConnectPlus\\AppConfig.cs",
+              "RelativeToolTip": "ConnectPlus\\AppConfig.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwBEAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T15:45:21.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\ROHIT\\CONNECTPLUS\\ConnectPlus\\Forms\\MainForm.cs",
+              "RelativeDocumentMoniker": "ConnectPlus\\Forms\\MainForm.cs",
+              "ToolTip": "C:\\Users\\ROHIT\\CONNECTPLUS\\ConnectPlus\\Forms\\MainForm.cs",
+              "RelativeToolTip": "ConnectPlus\\Forms\\MainForm.cs",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAUwOEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T15:12:06.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VideoService.cs",
+              "DocumentMoniker": "C:\\Users\\ROHIT\\CONNECTPLUS\\ConnectPlus\\Services\\VideoService.cs",
+              "RelativeDocumentMoniker": "ConnectPlus\\Services\\VideoService.cs",
+              "ToolTip": "C:\\Users\\ROHIT\\CONNECTPLUS\\ConnectPlus\\Services\\VideoService.cs",
+              "RelativeToolTip": "ConnectPlus\\Services\\VideoService.cs",
+              "ViewState": "AgIAALAAAAAAAAAAAAAUwMIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T15:03:55.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ROHIT\\CONNECTPLUS\\ConnectPlus\\Forms\\MainForm.cs",
+              "RelativeDocumentMoniker": "ConnectPlus\\Forms\\MainForm.cs",
+              "ToolTip": "C:\\Users\\ROHIT\\CONNECTPLUS\\ConnectPlus\\Forms\\MainForm.cs [Design]",
+              "RelativeToolTip": "ConnectPlus\\Forms\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T15:01:03.205Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ActivationForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ROHIT\\CONNECTPLUS\\ConnectPlus\\Forms\\ActivationForm.cs",
+              "RelativeDocumentMoniker": "ConnectPlus\\Forms\\ActivationForm.cs",
+              "ToolTip": "C:\\Users\\ROHIT\\CONNECTPLUS\\ConnectPlus\\Forms\\ActivationForm.cs [Design]",
+              "RelativeToolTip": "ConnectPlus\\Forms\\ActivationForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T14:59:14.747Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConnectPlus",
+              "DocumentMoniker": "C:\\Users\\ROHIT\\CONNECTPLUS\\ConnectPlus\\ConnectPlus.csproj",
+              "RelativeDocumentMoniker": "ConnectPlus\\ConnectPlus.csproj",
+              "ToolTip": "C:\\Users\\ROHIT\\CONNECTPLUS\\ConnectPlus\\ConnectPlus.csproj",
+              "RelativeToolTip": "ConnectPlus\\ConnectPlus.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAewBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-04T14:37:14.57Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
