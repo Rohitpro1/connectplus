@@ -1,0 +1,87 @@
+ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\ROHIT\Downloads\1764652886429 (1).mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Google
+  Duration: 00:00:08.00, start: 0.000000, bitrate: 2607 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720, 2454 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 140 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+[AVFormatContext @ 00000208fbdccac0] Requested output format 'dshow' is not known.
+[out#0 @ 00000208fbdc9180] Error initializing the muxer for video=OBS Virtual Camera: Invalid argument
+Error opening output file video=OBS Virtual Camera.
+Error opening output files: Invalid argument
+ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\ROHIT\Downloads\1764652886429 (1).mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Google
+  Duration: 00:00:08.00, start: 0.000000, bitrate: 2607 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720, 2454 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 140 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+[AVFormatContext @ 000001b45257cac0] Requested output format 'dshow' is not known.
+[out#0 @ 000001b452579180] Error initializing the muxer for video=OBS Virtual Camera: Invalid argument
+Error opening output file video=OBS Virtual Camera.
+Error opening output files: Invalid argument
+ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\ROHIT\Downloads\1764652886429 (1).mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Google
+  Duration: 00:00:08.00, start: 0.000000, bitrate: 2607 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720, 2454 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 140 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+[AVFormatContext @ 000001364fc0cac0] Requested output format 'dshow' is not known.
+[out#0 @ 000001364fc09180] Error initializing the muxer for video=OBS Virtual Camera: Invalid argument
+Error opening output file video=OBS Virtual Camera.
+Error opening output files: Invalid argument

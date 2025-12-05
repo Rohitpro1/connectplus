@@ -24,6 +24,7 @@ C:\Users\ROHIT\CONNECTPLUS\ConnectPlus\obj\Debug\net8.0-windows\ConnectPlus.Gene
 C:\Users\ROHIT\CONNECTPLUS\ConnectPlus\obj\Debug\net8.0-windows\ConnectPlus.AssemblyInfoInputs.cache
 C:\Users\ROHIT\CONNECTPLUS\ConnectPlus\obj\Debug\net8.0-windows\ConnectPlus.AssemblyInfo.cs
 C:\Users\ROHIT\CONNECTPLUS\ConnectPlus\obj\Debug\net8.0-windows\ConnectPlus.csproj.CoreCompileInputs.cache
+C:\Users\ROHIT\CONNECTPLUS\ConnectPlus\obj\Debug\net8.0-windows\ConnectPlus.sourcelink.json
 C:\Users\ROHIT\CONNECTPLUS\ConnectPlus\obj\Debug\net8.0-windows\ConnectP.5CD82061.Up2Date
 C:\Users\ROHIT\CONNECTPLUS\ConnectPlus\obj\Debug\net8.0-windows\ConnectPlus.dll
 C:\Users\ROHIT\CONNECTPLUS\ConnectPlus\obj\Debug\net8.0-windows\refint\ConnectPlus.dll

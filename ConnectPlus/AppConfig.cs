@@ -15,7 +15,7 @@ namespace ConnectPlus
 
         // Whisper executable path (optional for MVP)
         public static string WhisperPath { get; set; } = @"C:\whisper\whisper.exe";
-        public static string WhisperModelPath { get; set; } = @"C:\whisper\models\ggml-small.en.in";
+        public static string WhisperModelPath { get; set; } = @"C:\whisper\models\ggml-small.en.bin";
 
 
         // Ollama API URL

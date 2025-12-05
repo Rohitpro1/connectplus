@@ -33,14 +33,16 @@ namespace ConnectPlus.Services
 
             _currentVideoPath = path;
 
-            // Use LibVLC instance directly to create the Media
-            if (_libVLC == null || _mediaPlayer == null)
-                throw new InvalidOperationException("LibVLC or MediaPlayer not initialized.");
+            // Create media WITHOUT using "using" (because it gets disposed too early)
+            var media = new Media(_libVLC, path, FromType.FromPath);
 
-            using var media = new Media(_libVLC, path, FromType.FromPath);
-            // Assign media to player (clone/persist is handled by LibVLC)
             _mediaPlayer.Media = media;
+
+            // STEP 4 — IMPORTANT FOR LOOPING!
+            // Reset internal VLC playback state
+            _mediaPlayer.Stop();
         }
+
 
         public void Play()
         {
@@ -74,19 +76,26 @@ namespace ConnectPlus.Services
         {
             try
             {
-                // Called from VLC thread — marshal to UI thread if needed by caller
-                if (LoopEnabled && _mediaPlayer != null)
+                if (!LoopEnabled || _mediaPlayer == null)
+                    return;
+
+                // Delay required; LibVLC cannot restart immediately at EndReached
+                Task.Delay(150).ContinueWith(_ =>
                 {
-                    // Stop and Play provides a clean restart
-                    _mediaPlayer.Stop();
-                    _mediaPlayer.Play();
-                }
+                    try
+                    {
+                        _mediaPlayer.Stop();
+                        _mediaPlayer.Play();
+                    }
+                    catch { }
+                });
             }
             catch (Exception ex)
             {
-                Debug.WriteLine($"Error in EndReached handler: {ex}");
+                Debug.WriteLine("Loop error: " + ex);
             }
         }
+
 
         /// <summary>
         /// Starts an FFmpeg process that pushes the given video file to a DirectShow device (e.g., OBS Virtual Camera).
@@ -138,6 +147,12 @@ namespace ConnectPlus.Services
                     // Asynchronously read output/errors to avoid deadlocks
                     _ffmpegProcess.BeginOutputReadLine();
                     _ffmpegProcess.BeginErrorReadLine();
+                    _ffmpegProcess.ErrorDataReceived += (s, e) =>
+                    {
+                        if (!string.IsNullOrWhiteSpace(e.Data))
+                            File.AppendAllText("ffmpeg_log.txt", e.Data + Environment.NewLine);
+                    };
+
                 }
             }
             catch (Exception ex)

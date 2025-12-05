@@ -22,37 +22,47 @@ namespace ConnectPlus.Forms
             }
         }
 
-        private void btnActivate_Click(object sender, EventArgs e)
+        private void btnActivate_Click(object? sender, EventArgs e)
         {
-            string key = txtLicenseKey.Text.Trim();
-
-            if (string.IsNullOrEmpty(key))
+            try
             {
-                lblStatus.Text = "Please enter a license key";
-                lblStatus.ForeColor = Color.Red;
-                return;
+                string key = txtLicenseKey.Text?.Trim() ?? string.Empty;
+                if (string.IsNullOrEmpty(key))
+                {
+                    MessageBox.Show("Please enter a license key.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Ensure app data dir exists before activation
+                try { System.IO.Directory.CreateDirectory(AppConfig.AppDataDir); } catch { }
+
+                // Call your existing license service (wrap any exceptions)
+                var hwid = ConnectPlus.Services.HwidService.GetHwid();
+                var ok = ConnectPlus.Services.LicenseService.ActivateLocal(key, hwid);
+
+                if (ok)
+                {
+                    MessageBox.Show("Activation successful.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Logger.Log("Activated with key: " + key + " HWID: " + hwid);
+
+                    // Open MainForm
+                    this.Hide();
+                    var main = new Forms.MainForm();
+                    main.Show();
+                    this.BeginInvoke(new Action(() => this.Close()));
+                }
+                else
+                {
+                    MessageBox.Show("Activation failed. Check the key and try again.", "Activation Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    Logger.Log("Activation failed for key: " + key + " HWID: " + hwid);
+                }
             }
-
-            string hwid = HwidService.GetHwid();
-            bool activated = LicenseService.ActivateLocal(key, hwid);
-
-            if (activated)
+            catch (Exception ex)
             {
-                lblStatus.Text = "Activation successful!";
-                lblStatus.ForeColor = Color.FromArgb(0, 234, 255);
-
-                // Close and open MainForm
-                this.Hide();
-                MainForm mainForm = new MainForm();
-                mainForm.Show();
-                this.Close();
-            }
-            else
-            {
-                lblStatus.Text = "Invalid license key. Use: DEMO-KEY-1234";
-                lblStatus.ForeColor = Color.Red;
+                Logger.LogFatal("Activation error: " + ex);
+                MessageBox.Show("Error during activation:\n\n" + ex.Message + "\n\nSee log: " + Path.Combine(AppConfig.AppDataDir, "error.log"),
+                    "Activation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
 }
-

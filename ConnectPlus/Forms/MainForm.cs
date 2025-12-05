@@ -106,8 +106,20 @@ namespace ConnectPlus.Forms
         private void btnLoop_Click(object? sender, EventArgs e)
         {
             _isLoopEnabled = !_isLoopEnabled;
-            if (_videoService != null)
+            if (_videoService != null) {
                 _videoService.LoopEnabled = _isLoopEnabled;
+                MediaPlayer? mp = typeof(VideoService)
+        .GetField("_mediaPlayer", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)?
+        .GetValue(_videoService) as MediaPlayer;
+
+
+
+            if (mp != null)
+                {
+                    mp.EnableKeyInput = false;
+                    mp.EnableMouseInput = false;
+                }
+            }
 
             if (_isLoopEnabled)
             {
